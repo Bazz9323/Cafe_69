@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg">
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">
+            <h2>☕ Cafe Order</h2>
+        </div>
+
+        <!-- FORM -->
+        <div class="form">
+            <input id="customerName" placeholder="Nama Pemesan">
+            <input id="tableNumber" placeholder="No Meja">
+            <input id="payment" placeholder="Cash atau QR">
+        </div>
+
+        <!-- NAVBAR -->
+        <div class="navbar">
+            <button class="nav-btn active" onclick="showMenu('makanan')">🍽 MAKANAN</button>
+            <button class="nav-btn" onclick="showMenu('minuman')">🥤 MINUMAN</button>
+        </div>
+
+        <!-- ===== MENU MAKANAN ===== -->
+        <div class="menu-section" data-category="makanan">
+            <div class="menu-item">
+                <img src="https://i.imgur.com/5uZ5ZzP.jpg">
+                <div>
+                    <h4>Nasi Goreng Spesial 1</h4>
+                    <p>Rp 25.000</p>
+                </div>
+                <button onclick="addItem('Nasi Goreng Spesial 1',25000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/1bX5QH6.jpg">
+                <div>
+                    <h4>Mie Goreng 1</h4>
+                    <p>Rp 22.000</p>
+                </div>
+                <button onclick="addItem('Mie Goreng 1',22000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/5uZ5ZzP.jpg">
+                <div>
+                    <h4>Nasi Kuning Spesial 1</h4>
+                    <p>Rp 25.000</p>
+                </div>
+                <button onclick="addItem('Nasi Kuning Spesial 1',25000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/1bX5QH6.jpg">
+                <div>
+                    <h4>Ayam Goreng 1</h4>
+                    <p>Rp 22.000</p>
+                </div>
+                <button onclick="addItem('Ayam Goreng 1',22000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/5uZ5ZzP.jpg">
+                <div>
+                    <h4>Nasi Goreng Spesial 2</h4>
+                    <p>Rp 25.000</p>
+                </div>
+                <button onclick="addItem('Nasi Goreng Spesial 2',25000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/1bX5QH6.jpg">
+                <div>
+                    <h4>Mie Goreng 2</h4>
+                    <p>Rp 22.000</p>
+                </div>
+                <button onclick="addItem('Mie Goreng 2',22000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/5uZ5ZzP.jpg">
+                <div>
+                    <h4>Nasi Kuning Spesial 2</h4>
+                    <p>Rp 25.000</p>
+                </div>
+                <button onclick="addItem('Nasi Kuning Spesial 2',25000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/1bX5QH6.jpg">
+                <div>
+                    <h4>Ayam Goreng 2</h4>
+                    <p>Rp 22.000</p>
+                </div>
+                <button onclick="addItem('Ayam Goreng 2',22000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/5uZ5ZzP.jpg">
+                <div>
+                    <h4>Nasi Goreng Spesial 3</h4>
+                    <p>Rp 25.000</p>
+                </div>
+                <button onclick="addItem('Nasi Goreng Spesial 3',25000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/1bX5QH6.jpg">
+                <div>
+                    <h4>Mie Goreng 3</h4>
+                    <p>Rp 22.000</p>
+                </div>
+                <button onclick="addItem('Mie Goreng 3',22000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/5uZ5ZzP.jpg">
+                <div>
+                    <h4>Nasi Kuning Spesial 3</h4>
+                    <p>Rp 25.000</p>
+                </div>
+                <button onclick="addItem('Nasi Kuning Spesial 3',25000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/1bX5QH6.jpg">
+                <div>
+                    <h4>Ayam Goreng 3</h4>
+                    <p>Rp 22.000</p>
+                </div>
+                <button onclick="addItem('Ayam Goreng 3',22000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/5uZ5ZzP.jpg">
+                <div>
+                    <h4>Nasi Goreng Spesial 4</h4>
+                    <p>Rp 25.000</p>
+                </div>
+                <button onclick="addItem('Nasi Goreng Spesial 4',25000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/1bX5QH6.jpg">
+                <div>
+                    <h4>Mie Goreng 4</h4>
+                    <p>Rp 22.000</p>
+                </div>
+                <button onclick="addItem('Mie Goreng 4',22000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/5uZ5ZzP.jpg">
+                <div>
+                    <h4>Nasi Kuning Spesial 4</h4>
+                    <p>Rp 25.000</p>
+                </div>
+                <button onclick="addItem('Nasi Kuning Spesial 4',25000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/1bX5QH6.jpg">
+                <div>
+                    <h4>Ayam Goreng 4</h4>
+                    <p>Rp 22.000</p>
+                </div>
+                <button onclick="addItem('Ayam Goreng 4',22000)">Tambah</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ===== MENU MINUMAN ===== -->
+        <div class="menu-section hidden" data-category="minuman">
+            <div class="menu-item">
+                <img src="https://i.imgur.com/M4ZfK0U.jpg">
+                <div>
+                    <h4>Es Teh Manis</h4>
+                    <p>Rp 5.000</p>
+                </div>
+                <button onclick="addItem('Es Teh Manis',5000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/3vX1F3y.jpg">
+                <div>
+                    <h4>Kopi Hitam</h4>
+                    <p>Rp 10.000</p>
+                </div>
+                <button onclick="addItem('Kopi Hitam',10000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/M4ZfK0U.jpg">
+                <div>
+                    <h4>Teh Manis</h4>
+                    <p>Rp 5.000</p>
+                </div>
+                <button onclick="addItem('Teh Manis',5000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/3vX1F3y.jpg">
+                <div>
+                    <h4>Es Kopi Hitam</h4>
+                    <p>Rp 10.000</p>
+                </div>
+                <button onclick="addItem('Es Kopi Hitam',10000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/M4ZfK0U.jpg">
+                <div>
+                    <h4>Es Teh Manis 1</h4>
+                    <p>Rp 5.000</p>
+                </div>
+                <button onclick="addItem('Es Teh Manis 1',5000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/3vX1F3y.jpg">
+                <div>
+                    <h4>Kopi Hitam 1</h4>
+                    <p>Rp 10.000</p>
+                </div>
+                <button onclick="addItem('Kopi Hitam 1',10000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/M4ZfK0U.jpg">
+                <div>
+                    <h4>Teh Manis 1</h4>
+                    <p>Rp 5.000</p>
+                </div>
+                <button onclick="addItem('Teh Manis 1',5000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/3vX1F3y.jpg">
+                <div>
+                    <h4>Es Kopi Hitam 1</h4>
+                    <p>Rp 10.000</p>
+                </div>
+                <button onclick="addItem('Es Kopi Hitam 1',10000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/M4ZfK0U.jpg">
+                <div>
+                    <h4>Es Teh Manis 2</h4>
+                    <p>Rp 5.000</p>
+                </div>
+                <button onclick="addItem('Es Teh Manis 2',5000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/3vX1F3y.jpg">
+                <div>
+                    <h4>Kopi Hitam 2</h4>
+                    <p>Rp 10.000</p>
+                </div>
+                <button onclick="addItem('Kopi Hitam 2',10000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/M4ZfK0U.jpg">
+                <div>
+                    <h4>Teh Manis 2</h4>
+                    <p>Rp 5.000</p>
+                </div>
+                <button onclick="addItem('Teh Manis 2',5000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/3vX1F3y.jpg">
+                <div>
+                    <h4>Es Kopi Hitam 2</h4>
+                    <p>Rp 10.000</p>
+                </div>
+                <button onclick="addItem('Es Kopi Hitam 2',10000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/M4ZfK0U.jpg">
+                <div>
+                    <h4>Es Teh Manis 3</h4>
+                    <p>Rp 5.000</p>
+                </div>
+                <button onclick="addItem('Es Teh Manis 3',5000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/3vX1F3y.jpg">
+                <div>
+                    <h4>Kopi Hitam 3</h4>
+                    <p>Rp 10.000</p>
+                </div>
+                <button onclick="addItem('Kopi Hitam 3',10000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/M4ZfK0U.jpg">
+                <div>
+                    <h4>Teh Manis 3</h4>
+                    <p>Rp 5.000</p>
+                </div>
+                <button onclick="addItem('Teh Manis 3',5000)">Tambah</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.imgur.com/3vX1F3y.jpg">
+                <div>
+                    <h4>Es Kopi Hitam 3</h4>
+                    <p>Rp 10.000</p>
+                </div>
+                <button onclick="addItem('Es Kopi Hitam 3',10000)">Tambah</button>
+            </div>
+        </div>
+
+        <!-- ORDER LIST -->
+        <div id="orderList" class="order-list"></div>
+
+        <!-- TOTAL -->
+        <div class="total" id="total">Total: Rp 0</div>
+
+        <button class="wa-btn" onclick="sendToWhatsApp()">Kirim ke WhatsApp</button>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
