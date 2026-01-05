@@ -20,6 +20,8 @@ function addItem(name, price) {
         orders[name].qty++;
     }
     renderOrder();
+
+    showToast(`${name} ditambahkan ke keranjang`);
 }
 
 function changeQty(name, delta) {
@@ -93,4 +95,14 @@ function sendToWhatsApp() {
     customerName.value = "";
     tableNumber.value = "";
     payment.value = "";
+}
+
+function showToast(text) {
+    const toast = document.getElementById("toast");
+    toast.innerText = text;
+    toast.classList.add("show");
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+    }, 1500);
 }
