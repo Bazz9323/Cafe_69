@@ -177,10 +177,3 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
-
-
-.menu-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-}
