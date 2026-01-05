@@ -101,6 +101,9 @@ body {
     color: #555;
 }
 
+.menu-item button:active {
+    transform: scale(0.95);
+}
 
 .menu-item button {
     margin-left: auto;
@@ -198,3 +201,4 @@ body {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
 }
+
